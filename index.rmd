@@ -40,7 +40,7 @@ library(kableExtra)
 library(scales)
 library(tidyverse)
 
-budget <- read_excel("rooming.xlsx", sheet = "bud", range = "B13:G35") 
+budget <- read_excel("rooming.xlsx", sheet = "bud", range = "B13:G36") 
 budget <- sapply(budget, as.character)
 budget[is.na(budget)] <- ""
 budget <- data.frame(budget, stringsAsFactors = FALSE)
